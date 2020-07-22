@@ -17,7 +17,7 @@ class Patient
   end
   
   def appointments
-    new_appointment.map do |appt|
+    Appointment.all.map do |appt|
       appt.patient
     end
   end

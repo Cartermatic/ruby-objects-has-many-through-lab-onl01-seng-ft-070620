@@ -19,7 +19,7 @@ class Patient
   
   def appointments
     Appointment.all.select do |appt|
-      appt.self
+      appt.patient
       binding.pry
     end
   end
